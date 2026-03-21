@@ -11,6 +11,9 @@ model = tf.keras.models.load_model("ocr_model.h5")
 image_path = input("Enter image path: ")
 input_img = cv2.imread(image_path)
 
+if input_img is None:
+	print("error:image not found")
+	exit()
 
 #convert image to grayscale
 
