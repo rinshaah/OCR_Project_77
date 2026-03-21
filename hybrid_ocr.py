@@ -7,11 +7,11 @@ import pytesseract
 model = tf.keras.models.load_model("ocr_model.h5")
 
 # Load image
-img = cv2.imread("text5.png")
+input_img = cv2.imread("text5.png")
 
 #convert image to grayscale
 
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gray = cv2.cvtColor(input_img, cv2.COLOR_BGR2GRAY)
 
 # Resize for CNN check
 resized = cv2.resize(gray, (28, 28))
