@@ -42,5 +42,7 @@ else:
         config='--psm 6'
     )
 
+    print("=== OCR Result ===")
+
     print("Tesseract Output:")
     print(text)
