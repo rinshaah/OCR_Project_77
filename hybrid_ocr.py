@@ -6,8 +6,11 @@ import pytesseract
 # Load CNN model
 model = tf.keras.models.load_model("ocr_model.h5")
 
+
 # Load image
-input_img = cv2.imread("text5.png")
+image_path = input("Enter image path: ")
+input_img = cv2.imread(image_path)
+
 
 #convert image to grayscale
 
@@ -29,8 +32,8 @@ if h < 50 and w < 50:
 
 else:
     # Use Tesseract for text
-    thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)[1]
-
+    thresh=cv2.threshold(gray,150,255,cv2.THRESH_BINARY)[1]
+    
     text = pytesseract.image_to_string(
         thresh,
         config='--psm 6'
