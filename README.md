@@ -89,7 +89,7 @@ The system can be further enhanced for real-time recognition and handwritten tex
 
 ---
 
-## 📌 Future Scope
+## Future Scope
 Improve accuracy using advanced deep learning models.
 Add support for handwritten text recognition.
 Develop a graphical user interface (GUI).
@@ -97,5 +97,5 @@ Deploy as a web or mobile application.
 
 ---
 
-## 👩‍💻 Author:
+## Author:
  Rinsha
