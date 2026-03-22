@@ -76,9 +76,9 @@ python hybrid_ocr.py
 
 ## Output Screenshots
 * Input Image:
-![input](screenshots/input.png)
-* Terminal execution:
-![output](screenshots/output.png)
+ ![input](screenshots/input.png)
+* Output Image:<br>
+ ![output](screenshots/output.png)
 * Sample Output:
 ```bash
 Enter image path: text4.png
