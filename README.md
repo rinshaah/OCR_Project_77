@@ -1,6 +1,6 @@
-# 🔍 Hybrid OCR System using CNN & Tesseract
+# Hybrid OCR System using CNN & Tesseract
 
-## 📌 Project Overview
+## Project Overview
 Manual data entry from images is time-consuming and prone to human error. 
 This project develops a robust **Optical Character Recognition (OCR)** system that leverages a hybrid approach:
 1. **Custom CNN:** Optimized for high-accuracy single-character and digit recognition.
@@ -8,12 +8,14 @@ This project develops a robust **Optical Character Recognition (OCR)** system th
 
 ---
 
-## ❗ Problem Statement
+## Problem Statement
 Manual data entry from images is time-consuming and error-prone. This project aims to develop an OCR system 
 that can automatically detect and extract text from images, including both single characters and full text, 
 using a hybrid approach combining CNN and Tesseract OCR.
 
-## 🎯 Objectives
+---
+
+## Objectives
 * **Character Recognition:** Use a Convolutional Neural Network (CNN) for precise digit and letter identification.
 * **Text Extraction:** Integrate Tesseract OCR for multi-line and full-sentence recognition.
 * **Hybrid Logic:** Build a system for better accuracy.
@@ -21,8 +23,8 @@ using a hybrid approach combining CNN and Tesseract OCR.
 
 ---
 
-## 🛠 Tools & Technologies
-* **Language:** Python 3.x
+## Tools & Technologies
+* **Language:** Python 3.12.3
 * **Deep Learning:** TensorFlow / Keras
 * **Computer Vision:** OpenCV
 * **OCR Engine:** Tesseract OCR
@@ -31,7 +33,7 @@ using a hybrid approach combining CNN and Tesseract OCR.
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -58,31 +60,34 @@ sudo apt install tesseract-ocr
 
 ---
 
-## ▶️ Execution Procedure
-Place the input image in the project folder.
+## Execution Procedure
+* Place the input image in the project folder.
 Run the OCR program:
 ```bash
-python real_ocr.py
+python hybrid_ocr.py
 ```
 
-The System will:
-Detect whether the input is a single character or full text.
-Use CNN or Tesseract accordingly.
-Display the recognized text as output.
+### The System will:
+* Detect whether the input is a single character or full text.
+* Use CNN or Tesseract accordingly.
+* Display the recognized text as output.
 
 ---
 
-## 📷 Output Screenshots
-Input Image: (Insert image here)
-Terminal execution: (Insert image here)
-Sample Output:
+## Output Screenshots
+* Input Image: (Insert image here)
+* Terminal execution: (Insert image here)
+* Sample Output:
 ```bash
-Detected Text: HELLO WORLD
+Enter image path: text4.png
+```
+```bash
+OCR_Result: HELLO WORLD
 ```
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 This project successfully demonstrates a hybrid OCR system capable of recognizing both single 
 characters and full text from images. The combination of CNN and Tesseract improves accuracy and flexibility. 
 The system can be further enhanced for real-time recognition and handwritten text detection.
@@ -90,10 +95,10 @@ The system can be further enhanced for real-time recognition and handwritten tex
 ---
 
 ## Future Scope
-Improve accuracy using advanced deep learning models.
-Add support for handwritten text recognition.
-Develop a graphical user interface (GUI).
-Deploy as a web or mobile application.
+* Improve accuracy using advanced deep learning models.
+* Add support for handwritten text recognition.
+* Develop a graphical user interface (GUI).
+* Deploy as a web or mobile application.
 
 ---
 
