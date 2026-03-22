@@ -3,7 +3,5 @@ __pycache__/
 *.pyc
 *.h5
 *.log
-*.png
-*.jpg
 models/
 *:Zone.Identifier
