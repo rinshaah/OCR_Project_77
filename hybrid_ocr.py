@@ -1,3 +1,31 @@
+import os
+import warnings
+
+# 1. Block GPU and set log levels BEFORE importing TF
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+os.environ['ABSL_LOGGING_MIN_LEVEL'] = '3'
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+import logging
+logging.getLogger('tensorflow').setLevel(logging.ERROR)
+logging.getLogger('absl').setLevel(logging.ERROR)
+warnings.filterwarnings('ignore')
+import os
+import logging
+
+# Standard levels
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+os.environ['ABSL_LOGGING_MIN_LEVEL'] = '3'
+
+# This specific variable often stops the C++ layer from checking for CUDA
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0' 
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
+# Suppress the absl logger specifically
+import absl.logging
+absl.logging.set_verbosity(absl.logging.ERROR)
+
+
 import cv2
 import numpy as np
 import tensorflow as tf
